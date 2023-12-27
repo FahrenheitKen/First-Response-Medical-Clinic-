@@ -1,0 +1,16 @@
+2023-12-19T18:22:37+00:00 CRITICAL Uncaught Error: Attempt to assign property "page_template" on null in C:\laragon_New\www\firstresponse\wp-includes\post.php:4635
+Stack trace:
+#0 C:\laragon_New\www\firstresponse\wp-includes\post.php(4862): wp_insert_post(Array, false, true)
+#1 C:\laragon_New\www\firstresponse\wp-content\plugins\elementor\includes\db.php(235): wp_update_post(Array)
+#2 C:\laragon_New\www\firstresponse\wp-content\plugins\elementor\core\base\document.php(1310): Elementor\DB->save_plain_text(38930)
+#3 C:\laragon_New\www\firstresponse\wp-content\plugins\elementor\core\base\document.php(797): Elementor\Core\Base\Document->save_elements(Array)
+#4 C:\laragon_New\www\firstresponse\wp-content\plugins\elementor\core\documents-manager.php(545): Elementor\Core\Base\Document->save(Array)
+#5 [internal function]: Elementor\Core\Documents_Manager->ajax_save(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#6 C:\laragon_New\www\firstresponse\wp-content\plugins\elementor\core\common\modules\ajax\module.php(176): call_user_func(Array, Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#7 C:\laragon_New\www\firstresponse\wp-includes\class-wp-hook.php(324): Elementor\Core\Common\Modules\Ajax\Module->handle_ajax_request('')
+#8 C:\laragon_New\www\firstresponse\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#9 C:\laragon_New\www\firstresponse\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\laragon_New\www\firstresponse\wp-admin\admin-ajax.php(188): do_action('wp_ajax_element...')
+#11 {main}
+  thrown in C:\laragon_New\www\firstresponse\wp-includes\post.php on line 4635
+
